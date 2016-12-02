@@ -7,6 +7,8 @@ import json
 from flask import request
 from castle.castle import Castle
 
+# assume the stuff below is happening in a context that has access to a request
+# you can see the real working example in ./flask_demo_server.py
 api_secret = '<YOUR_API_SECRET>'
 request_metadata = {
     'X-Castle-Ip': request.remote_addr,
